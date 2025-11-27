@@ -1,0 +1,100 @@
+<style>
+  /* ESTILOS DE LA TABLA (Basados en el diseño de vocabulario anterior) */
+  .styled-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif; 
+  }
+  
+  .styled-table th, .styled-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+  }
+  
+  /* Encabezados de columna */
+  .styled-table th {
+    background-color: #2c3e50; /* Color oscuro como el encabezado de tu tabla de vocabulario */
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+  }
+  
+  /* Encabezados secundarios (Español) */
+  .styled-table th span {
+      display: block;
+      font-weight: normal;
+      font-size: 11px;
+      color: #b0c4de; /* Color gris claro para el subtítulo */
+      margin-top: 2px;
+  }
+
+  /* Filas alternas */
+  .styled-table tr:nth-child(even) { background-color: #f9f9f9; }
+  .styled-table tr:hover { background-color: #f1f1f1; }
+
+  /* Contenido en cursiva para los ejemplos de verbos */
+  .styled-table td {
+      font-style: italic;
+      color: #333;
+  }
+  
+  /* Celdas del "To + infinitive" */
+  .infinitive-cell {
+      font-style: normal; /* Quita la cursiva en esta columna */
+      font-weight: bold;
+      color: #e67e22; /* Color naranja para destacar */
+  }
+
+</style>
+
+<div style="padding: 20px;"> <table class="styled-table">
+      <thead>
+        <tr>
+          <th>Subject <span>Sujeto</span></th>
+          <th>Main verb <span>Verbo principal</span></th>
+          <th>Indirect object <span>Objeto indirecto</span></th>
+          <th>To + infinitive</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>He</td>
+          <td>Told</td>
+          <td>Them</td>
+          <td class="infinitive-cell">(not) to go away</td>
+        </tr>
+        <tr>
+          <td>She</td>
+          <td>Asked</td>
+          <td>Me</td>
+          <td class="infinitive-cell">(not) to be quiet</td>
+        </tr>
+        <tr>
+          <td>Mary</td>
+          <td>Urged</td>
+          <td>Her mother</td>
+          <td class="infinitive-cell">(not) to help her</td>
+        </tr>
+        <tr>
+          <td>She</td>
+          <td>Persuaded</td>
+          <td>Her son</td>
+          <td class="infinitive-cell">(not) to study</td>
+        </tr>
+        <tr>
+          <td>I</td>
+          <td>Advised</td>
+          <td>Him</td>
+          <td class="infinitive-cell">(not) to stop smoking</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
